@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign IN</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                    <i class="fa-brands fa-pied-piper fa-2xl" style="color: #126407;"></i>
+                </a>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact US</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="d-flex align-items-center">
+
+
+
+                <button type="button" class="btn btn-outline-light me-2" data-mdb-ripple-color="dark">Download</button>
+
+                <!-- Notifications -->
+                <!-- <div class="dropdown">
+                <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="#">Some news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Another news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </div> -->
+                <!-- Avatar -->
+                <!-- <div class="dropdown">
+                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                    <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div> -->
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+
+    <div class="signinContainer">
+        <div class="signinContainer1">
+            <a href="https://storyset.com/online"><img src="Mobile login.gif" alt="" class="anima"></a>
+        </div>
+        <form class="signinContainer2">
+            <h3 class="link-success my-2">Sign In</h3>
+
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" placeholder="Email" class="form-control" />
+
+            </div>
+
+
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" placeholder="Password" class="form-control" />
+
+            </div>
+
+
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!" class="link-success">Forgot password?</a>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="button" onclick="signInBtn()" class="btn btn-success btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>Not a member? <a href="#!" class="link-success">Register</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-success btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+                <button type="button" onclick="signInG()" class="btn btn-success btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+                <button type="button" class="btn btn-success btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+                <button type="button" class="btn btn-success btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+        </form>
+        <!-- <div class="signinContainer2">
+
+            <input type="email" id="typeEmail" placeholder="Email" class="form-control" />
+            <label class="form-label" for="typeEmail">Email input</label>
+
+
+            <input type="password" id="typePassword" placeholder="Password" class="form-control" />
+            <label class="form-label" for="typePassword">Password input</label>
+
+        </div> -->
+    </div>
+
+
+
+    <script>
+        const signInBtn = () => {
+            window.location.href = "userPage.html"
+        }
+    </script>
+
+
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+</body>
+
+</html>
